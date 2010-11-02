@@ -31,7 +31,7 @@
         %li
           %a.screenshot{:href => "images/Projects/makeNewProject.jpg", :rel => "facebox"} View screenshot
           Hover over the "
-          %a{:href => "#allProjects"}> All Projects
+          %a{:href => "#all_projects"}> All Projects
           " button on the far left of the blue navigation bar.
         %li Click on the "+ New project" link.
         %li
@@ -39,7 +39,7 @@
           Give your project a name.
         %li
           Under "More options" you can choose to enable
-          %a{:href => "#timeTracking"} Time Tracking
+          %a{:href => "#hours"} Time Tracking
           or The "Public project" features.
           %a.screenshot{:href => "images/Projects/enableTimeTracking.jpg", :rel => "facebox"} View screenshot
         %li
@@ -118,7 +118,7 @@
       %p If you already have invited teammates into your project you can still edit their roles and choose to remove them at a later time if you desire.
 
 
-    %h2#taskList.borderBottom Task Lists
+    %h2#task_lists.borderBottom Task Lists
     .grayBackground.indent20
       %p
         "Task Lists" is a feature used for grouping "
@@ -154,7 +154,7 @@
       %p
         %a.screenshot{:href => "images/Tasks/addTask.jpg", :rel => "facebox"}> View screenshot
         After creating a
-        %a{:href => "#tasklist"} Task List
+        %a{:href => "#task_lists"} Task List
         you will see a "+ Add Task" link. After clicking on + Add Task you will be presented with the following four options:
       %ol.numbers
         %li.bold
@@ -220,13 +220,13 @@
       %p
         With a project selected, click on
         = succeed "." do
-          %a{:href => "#taskList"} Task Lists
+          %a{:href => "#task_lists"} Task Lists
         If you have Tasks created under a Task List you will be able to reorder them. Hover over the Task and a move icon will appear to the left of the task. Click and drag this icon to move the Tasks and change their order.
       %h3 Filter Tasks
       %p
         %a.screenshot{:href => "images/Tasks/filter.jpg", :rel => "facebox"}> View screenshot
         When you are in the
-        %a{:href => "#taskList"} Task Lists
+        %a{:href => "#task_lists"} Task Lists
         or Tasks pages you will be able to filter your Tasks from the input field in the righthand sidebar labeled, "Filter tasks by name". As you type a Task's name only matching results will be visible. All other non-matching Tasks will disappear. Delete the Task name that you typed into the Filter fields to reveal all of the Tasks again.
       %h3 Quick Tasks Viewing
       %p There are two additional quick ways to get to your Tasks:
@@ -363,7 +363,7 @@
             %dd Upload the head shots, product shots, and location shots needed to complete the project.
 
 
-    %h2#allProjects.borderBottom All Projects
+    %h2#all_projects.borderBottom All Projects
     .grayBackground.indent20
       %p
         %a.screenshot{:href => "images/AllProjects/allProjects.jpg", :rel => "facebox"}> View screenshot
@@ -442,7 +442,7 @@
             %li Click "OK."
 
 
-    %h2#timeTracking.borderBottom Time Tracking
+    %h2#hours.borderBottom Time Tracking
     .grayBackground.indent20
       %p
         %a.screenshot{:href => "images/TimeTracking/timeTracking.jpg", :rel => "facebox"}> View screenshot
@@ -497,13 +497,13 @@
                   Click this dropdown to filter the hours by people (teammates).
 
 
-    %h2#calendarCharts.borderBottom Calendar and Charts
+    %h2#calendar.borderBottom Calendar and Charts
     .grayBackground.indent20
       %p
         Calendar and Charts plot your Tasks and Task Lists for easy timeline visualization. You can access these views from the "Overview for All Projects" page or from within a project's
-        %a{:href => "#taskList"} Task List
+        %a{:href => "#task_lists"} Task List
         or
-        %a{:href => "#task"} Task
+        %a{:href => "#tasks"} Task
         sections.
       %h3 Calendar
       %p
@@ -573,7 +573,7 @@
         %dd
 
 
-    %h2#settings.borderBottom Settings
+    %h2#users.borderBottom Settings
     .grayBackground.indent20
       %p
         %a.screenshot{:href => "images/Settings/settings.jpg", :rel => "facebox"}> View screenshot
