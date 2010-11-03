@@ -1089,7 +1089,21 @@ li, dd      { padding:5px 0; }
   padding: 0;
   min-width: 800px; }
 
-.screenshot { background:url("/images/screenshot.png") 0 -25px no-repeat; display:block; float:right; height:25px; margin-left:20px; text-indent:-9999em; width:124px; }
+a.screenshot { background:url("/images/screenshot.png") 0 -25px no-repeat; display:block; float:right; height:25px; margin-left:20px; text-indent:-9999em; width:124px; }
 a.screenshot:hover    { background:url("/images/screenshot.png") 0 0 no-repeat; display:block; float:right; height:25px; width:124px; }
 
+img.screenshot {
+  border: 1px solid #aaa;
+  margin: 20px 0;
+  width: 500px;
+  cursor: pointer;
+}
+
 #splash { padding: 150px 0 400px; }
+
+p.tip {
+  padding: 20px 40px;
+  background-color: #ffd;
+  border: 1px solid #cc5;
+  margin: 10px 0;
+}

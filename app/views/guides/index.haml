@@ -29,86 +29,97 @@
       %p The first time you sign in to Teambox you will be prompted to create a project. Doing so is easy.
       %ol.numbers
         %li
-          %a.screenshot{:href => "images/Projects/makeNewProject.jpg", :rel => "facebox"} View screenshot
           Hover over the "
           %a{:href => "#all_projects"}> All Projects
-          " button on the far left of the blue navigation bar.
-        %li Click on the "+ New project" link.
+          " button on the far left of the blue navigation bar. And click on the "+ New project" link.
+          %img.screenshot{:src => "images/Projects/makeNewProject.jpg"}
+          
         %li
-          %a.screenshot{:href => "images/createProject.png", :rel => "facebox"} View screenshot
-          Give your project a name.
+          Give your project a name. Try to keep it short, as it will be appear on every email you send for this project.
+          %img.screenshot{:src => "images/createProject.png"}
         %li
           Under "More options" you can choose to enable
           %a{:href => "#hours"} Time Tracking
-          or The "Public project" features.
-          %a.screenshot{:href => "images/Projects/enableTimeTracking.jpg", :rel => "facebox"} View screenshot
+          or the <b>Public project</b> features.
+          %br
+          Time tracking will allow you to log file you spent on each task, while public projects allow you
+          to make external communities where anybody can join your project.
+          %img.screenshot{:src => "images/Projects/enableTimeTracking.jpg"}
         %li
           Invite people to the project by checking off names or entering e-mail addresses.
-          %a.screenshot{:href => "images/Projects/invitePeople.jpg", :rel => "facebox"} View screenshot
+          %br
+          Each user will receive an invitation email with instructions on how to access your project.
+          %img.screenshot{:src => "images/Projects/invitePeople.jpg"}
       %p.italic The first time you sign into Teambox you will be prompted to create a project.
-      %h3 Project Settings
-      %p
-        %a.screenshot{:href => "images/Projects/projectSettings.jpg", :rel => "facebox"}> View screenshot
-        If a project has been previously selected, you will see a "Project Settings" link to the far right of the blue navigation bar. You will then be presented with the following three options:
-      %ol.numbers
-        %li.bold
-          General Settings
-          %a.screenshot{:href => "images/Projects/generalSettings.jpg", :rel => "facebox"} View screenshot
-          %dl.normal
-            %dt.bold Project Name
-            %dd Keep it short and descriptive (e.g. Earthworks Yoga).
-            %dt.bold Permalink
-            %dd Creates a custom Web address to your project. Keep it short and descriptive also (e.g. earthworks).
-            %dt.bold Organization
-            %dd Allows you to group projects and users under a brand name. You can link them to your own domain to customize your Teambox space. Use your logo and login page and share them with your clients.
-            %dt.bold Archive this Project
-            %dd Keeps the project accessible for its members in a read-only format.
-            %dt.bold Enable time tracking
-            %dd Allows users to log time for tasks.
-            %dt.bold Public project
-            %dd Allows anybody to access the project and join it.
-        %li.bold
-          Project Archiving/Deletion
-          %dl.normal
-            %dt.bold First name
-            %dd Type your first name.
-            %dt.bold Last name
-            %dd Type your last name.
-            %dt.bold Biography
-            %dd Write a biography if you desire.
-        %li.bold
-          %dl.normal
-            %dt.bold Ownership
-            %dd The owner is the main person responsible for a project. He or she cannot be removed from the project before ownership is transferred to another user.
+
       %h3 Overview for all projects
       %p
-        %a.screenshot{:href => "images/Projects/allProjects.jpg", :rel => "facebox"} View screenshot
         Overview for "All Projects" is also the home screen, and it indicates all activity from each of your projects. This is a quick way to monitor the activity of your teammates.
+        %img.screenshot{:src => "images/Projects/allProjects.jpg"}
       %p Overview for All Projects can be reached two ways:
       %ol.numbers
         %li Click the Teambox logo to the top left of the site.
         %li
-          %a.screenshot{:href => "images/Projects/overviewForAllProjects.jpg", :rel => "facebox"}> View screenshot
           Hover over the "All Projects" button on the far left of the blue navigation bar, then click "Overview for All Projects".
+          %img.screenshot{:src => "images/Projects/overviewForAllProjects.jpg"}
+
+      %h3 Project Settings for existing projects
+      %p
+        Once you're in a project, if you are an administrator, you will see a "Project Settings" link to the far right of the blue navigation bar.
+        %br
+        You will then be presented with the following three options:
+        %img.screenshot{:src => "images/Projects/projectSettings.jpg"}
+      %ol.numbers
+        %li.bold
+          General Settings
+          %dl.normal
+            %dt.bold Project Name
+            %dd Keep it short and descriptive (e.g. Earthworks Yoga), so others know clearly what it's about.
+            %dt.bold Permalink
+            %dd This will be the web address for your project. It doesn't allow spaces, and it's case insensitive (e.g. earthworks).
+            %dt.bold Organization
+            %dd Allows you to group projects and users under a brand name. You can link them to your own domain to customize your Teambox space. Use your logo and login page and share them with your clients.
+            %dt.bold Archive this Project
+            %dd Keeps the project accessible for its members in a read-only format. You can keep as many projects as you like archived, they don't count against your account limits.
+            %dt.bold Enable time tracking
+            %dd Allows users to log time for tasks.
+            %dt.bold Public project
+            %dd Allows anybody to access the project and join it. This is to power <b>external communities</b>.
+          %img.screenshot{:src => "images/Projects/generalSettings.jpg"}
+        %li.bold
+          Project Archiving/Deletion.
+          %dl.normal
+            %dd Once you're done with a project, you can archive it or delete it.
+            %dd By archiving it you can access it in the future. We take care of hosting it for you until you need it.
+            %dd Deleting the project means removing permanently all its data. Proceed with caution!
+        %li.bold
+          %dl.normal
+            %dt.bold Ownership
+            %dd The owner is the main person responsible for a project. He or she cannot be removed from the project before ownership is transferred to another user.
 
 
     %h2#people.borderBottom People
     .grayBackground.indent20
       %p
-        %a.screenshot{:href => "images/People/people.jpg", :rel => "facebox"}> View screenshot
-        If a project has been previously selected, then you will see a "People" link to the far right of the blue navigation bar. You then will be presented with the following three options:
+        Once you're in a project (access it from the All Projects dropdown menu), you will see a "People" link to the far right of the blue navigation bar. You then will be presented with the following three options:
+        %img.screenshot{:src => "images/People/people.jpg"}
+      %p.tip
+        Only administrators of a project can invite or remove people from it.
+        %br
+        By default, users do not have admin permissions.
       %ol.numbers
         %li
           %dl.normal
             %dt.bold Enter your teammate's username or e-mail
-            %dd Inviting people to your Teambox project is easy; just ask them to create their own account. Then enter each teammate's username or e-mail into this field to invite that person into the project.
+            %dd Inviting people to your Teambox project is easy; just enter their email addresses (entering multiple addresses at once is ok).
+            %dd We will send them instructions on how to access your project.
         %li
           %dl.normal
-            %dt.bold Select a role for this project
-            %dd Observer - Teammate will have read-only access to the project.
-            %dd Commenter - Teammate can comment but not create new elements.
-            %dd Participant - Teammate can do everything but not invite users.
-            %dd Admin - Teammate can invite users to the project, and delete comments.
+            %dt.bold Which role will the user have in this project?
+            %dd Observer - Has read-only access to the project, but won't have permission to edit or post information.
+            %dd Commenter - Can comment on conversations and tasks, but not create new elements.
+            %dd Participant - Can create and edit conversations, tasks and pages, but can't manage users.
+            %dd Admin - Can invite users to the project, and delete comments.
         %li
           %dl.normal
             %dt.bold Invite also to the organization 'Design projects'?
@@ -121,30 +132,36 @@
     %h2#task_lists.borderBottom Task Lists
     .grayBackground.indent20
       %p
-        "Task Lists" is a feature used for grouping "
-        %a{:href => "#tasks"}> Tasks
-        \." You must create a Task List before you are allowed to create a Task. This feature helps keep your tasks organized.
+        %a{:href => "#tasks"} Tasks
+        are one of the main elements of Teambox.
+        They allow you to keep track of what you need to do, with responsibles and due dates.
+      %p.tip
+        Create a Task for every action you need to track. That way others can see it, and you can focus on what you have to do now.
+      %p
+        You must create a Task List before you are allowed to create a Task. This feature helps keep your tasks organized.
       %h3 Creating a Task List
       %ol.numbers
         %li
-          %a.screenshot{:href => "images/TaskLists/taskLists.jpg", :rel => "facebox"} View screenshot
           Click the "Task List" link in the blue navigation bar.
+          %img.screenshot{:src => "images/TaskLists/taskLists.jpg"}
         %li
-          %a.screenshot{:href => "images/TaskLists/newTaskList.jpg", :rel => "facebox"} View screenshot
           Click the "+ NEW TASK LIST" button in the right-hand column.
+          %img.screenshot{:src => "images/TaskLists/newTaskList.jpg"}
         %li Give your Task List a name.
         %li
-          %a.screenshot{:href => "images/TaskLists/startDate.jpg", :rel => "facebox"} View screenshot
-          If you prefer, you can indicate "Start" and "End" dates for the Task List. You will need to do this to make use of the Gantt Chart.
+          Optionally, you can indicate "Start" and "End" dates for the Task List. You will need to do this to make use of the Gantt Chart.
+          %img.screenshot{:src => "images/TaskLists/startDate.jpg"}
       %h3 Reordering Task Lists
       %ol.numbers
         %li
-          %a.screenshot{:href => "images/TaskLists/reorderTaskLists.jpg", :rel => "facebox"}> View screenshot
-          Click "Reorder Task Lists" on the right-hand column of the Task Lists section. Move icons will appear next to the Task Lists in this column.
+          Click "Reorder Task Lists" on the right-hand column of the Task Lists section.
+          %br
+          Move icons will appear next to the Task Lists in this column, indicating you can drag the lists.
+          %img.screenshot{:src => "images/TaskLists/reorderTaskLists.jpg"}
         %li
-          %a.screenshot{:href => "images/TaskLists/reorderTaskLists2.jpg", :rel => "facebox"}> View screenshot
           Click and drag to change the order of the Task Lists.
-        %li When you are finished, click "DONE."
+          %img.screenshot{:src => "images/TaskLists/reorderTaskLists2.jpg"}
+        %li When you are finished, click "Done reordering"
 
 
     %h2#tasks.borderBottom Tasks
@@ -152,16 +169,16 @@
       %p Tasks are indicators of the work that needs to be completed.
       %h3 Creating a Task
       %p
-        %a.screenshot{:href => "images/Tasks/addTask.jpg", :rel => "facebox"}> View screenshot
         After creating a
         %a{:href => "#task_lists"} Task List
-        you will see a "+ Add Task" link. After clicking on + Add Task you will be presented with the following four options:
+        click the "+ Add Task" link. You will be presented with the following four options:
+        %img.screenshot{:src => "images/Tasks/addTask.jpg"}
       %ol.numbers
         %li.bold
           %dl.normal
             %dt.bold
-              %a.screenshot{:href => "images/Tasks/taskForm.jpg", :rel => "facebox"}> View screenshot
               Enter a Task title
+              %img.screenshot{:src => "images/Tasks/taskForm.jpg"}
             %dd Create a title for the Task that needs to be completed.
         %li.bold
           %dl.normal
@@ -175,6 +192,7 @@
           %dl.normal
             %dt.bold Needs to be done before...
             %dd Click on the calendar icon to select a deadline for this Task.
+
       %h3 Task Management
       %p Teambox increases the usability and management of tasks with the following features:
       %ol.numbers
@@ -182,37 +200,39 @@
           %dl
             %dt Attach
             %dd
-              %a.screenshot{:href => "images/Tasks/attach.jpg", :rel => "facebox"}> View screenshot
               Click the paperclip icon to upload and attach a file.
+              %img.screenshot{:src => "images/Tasks/attach.jpg"}
         %li
           %dl
             %dt Track Time
             %dd
-              %a.screenshot{:href => "images/Tasks/timeTrackingIcon.jpg", :rel => "facebox"}> View screenshot
               Click the clock icon at the bottom left of the task. Enter the amount of hours you worked on the task and click Save.
+              %img.screenshot{:src => "images/Tasks/timeTrackingIcon.jpg"}
         %li
           %dl
             %dt Task Status
             %dd
-              %a.screenshot{:href => "images/Tasks/status.jpg", :rel => "facebox"}> View screenshot
               This dropdown allows you to choose from the following options:
               %ol.letters
-                %li New - Indicates a new Task
-                %li Open - Indicates an open Task
-                %li Hold - Indicates a Task that has been put on hold
-                %li Resolved - Indicates a Task that has been completed
-                %li Rejected - Indicates a Task that has been rejected
+                %li New - A task nobody's started working on yet.
+                %li Open - For tasks that are active, with an assigned person.
+                %li Hold - An issue where the team is waiting for an input.
+                %li Resolved - The task has been completed, and is now archived.
+                %li Rejected - It was decided to not continue this task, and it is now archived.
+              %p.tip
+                <b>Resolving</b> or <b>rejecting</b> a task will archive it, hiding it from the normal views.
+              %img.screenshot{:src => "images/Tasks/status.jpg"}
         %li
           %dl
             %dt Assignment
             %dd
-              %a.screenshot{:href => "images/Tasks/assignment.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Tasks/assignment.jpg"}
               Assign the Task to a teammate by selecting a name from the dropdown.
         %li
           %dl
             %dt Preview
             %dd
-              %a.screenshot{:href => "images/Tasks/preview.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Tasks/preview.jpg"}
               Click Preview to see how your
               %a{:href => "#textStyles"} text styles
               will be rendered.
@@ -224,7 +244,7 @@
         If you have Tasks created under a Task List you will be able to reorder them. Hover over the Task and a move icon will appear to the left of the task. Click and drag this icon to move the Tasks and change their order.
       %h3 Filter Tasks
       %p
-        %a.screenshot{:href => "images/Tasks/filter.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Tasks/filter.jpg"}
         When you are in the
         %a{:href => "#task_lists"} Task Lists
         or Tasks pages you will be able to filter your Tasks from the input field in the righthand sidebar labeled, "Filter tasks by name". As you type a Task's name only matching results will be visible. All other non-matching Tasks will disappear. Delete the Task name that you typed into the Filter fields to reveal all of the Tasks again.
@@ -235,13 +255,13 @@
           %dl.normal
             %dt.bold Hover over Project
             %dd
-              %a.screenshot{:href => "images/Tasks/shortcut1.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Tasks/shortcut1.jpg"}
               When you hover over the Project link in the blue navigation bar, a dropdown is revealed and your projects will be listed inside. When you hover over any Project in this dropdown you will see three icons appear to the right of the project. Clicking the second icon of a hovered project, a check mark, will take you directly to the project's Task List.
         %li.bold
           %dl.normal
             %dt.bold All Projects view
             %dd
-              %a.screenshot{:href => "images/Tasks/shortcut2.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Tasks/shortcut2.jpg"}
               While in Overview for All Projects, the right-hand sidebar will list all Tasks from all projects that are assigned to you. Click any of them to access the Task.
       %h3 Create Tasks by e-mail
       %p You have the ability to create Tasks from your personal e-mail account. To do this, follow these steps:
@@ -258,11 +278,11 @@
       %p Pages functions like a notepad or library and is accessible to all teammates. It provides a centralized place for everyone to obtain general project information.
       %h3 Creating a Page
       %p
-        %a.screenshot{:href => "images/Pages/newPage.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Pages/newPage.jpg"}
         Creating a Page is easy. Hover over the "Pages" link in the blue navigation bar and click the "+ New Page" link. Give your new Page a name and a description. After this you can add text, dividers, images or documents to your pages. Images will appear as they are, not as an image file icon or a text link.
       %h3 Editing or Deleting a Page
       %p
-        %a.screenshot{:href => "images/Pages/editDelete.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Pages/editDelete.jpg"}
         Once a Page is selected you will notice "Edit or Delete" links to the far right of the Title of your page. Click Edit to change the Page name or description. Click Delete to delete the Page; you must then confirm that you want to delete the Page.
       %h3 Tips for using Pages
       %p There are many uses for Pages, the following are a few examples:
@@ -286,7 +306,7 @@
       %h3 Reordering Pages
       %ol.numbers
         %li
-          %a.screenshot{:href => "images/Pages/reorderPages.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Pages/reorderPages.jpg"}
           Click "REORDER" on the right-hand column of the Pages section. Move icons will appear next to the Pages listed in this column.
         %li Click and drag to change the order of the Pages.
         %li When you are finished, click "DONE."
@@ -297,11 +317,11 @@
       %p Conversations function as isolated discussions accessible to all teammates. This feature provides a centralized place for teammates to ask questions, share information and receive feedback.
       %h3 Creating a Conversation
       %p
-        %a.screenshot{:href => "images/Conversations/newConversation.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Conversations/newConversation.jpg"}
         Click the "Conversation" link in the blue navigation bar. Give your new Conversation a name and a description.
       %h3 Editing or Deleting a Conversation
       %p
-        %a.screenshot{:href => "images/Conversations/editDeleteConversation.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Conversations/editDeleteConversation.jpg"}
         Once a Conversation is selected you will notice "Edit or Delete" links to the far right of the title of your Conversation. Click "Edit" to change the Conversation name or description. Click "Delete" to delete the Conversation; you must then confirm that you want to delete the Conversation.
       %h3 Tips for using Conversations
       %p There are many uses for Conversations. The following are a few examples:
@@ -331,7 +351,7 @@
           = succeed "." do
             %a{:href => "#textStyles"} text styles
         %li
-          %a.screenshot{:href => "images/Conversations/emailConversation.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Conversations/emailConversation.jpg"}
           You can reply to a conversation from your own e-mail.
 
 
@@ -340,7 +360,7 @@
       %p Files acts as a library for all files uploaded to the project. Instead of digging through Conversations, Pages or Tasks for file uploads, you can find them conveniently archived within the Files section.
       %h3 Adding a File
       %p
-        %a.screenshot{:href => "images/Files/files.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Files/files.jpg"}
         Click the "File" link in the blue navigation bar. Then click the "+ Upload A File" link to the right of the screen. Give the File a name and then click "Browse" to upload the file from your computer.
       %p It is important to know that the File section will still archive your files here even if you upload them in the Conversations, Pages or Tasks sections.
       %p There are many uses for Files, the following are a few examples:
@@ -366,24 +386,24 @@
     %h2#all_projects.borderBottom All Projects
     .grayBackground.indent20
       %p
-        %a.screenshot{:href => "images/AllProjects/allProjects.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/AllProjects/allProjects.jpg"}
         All Projects shows you all the recent activity across all of your projects. There are many useful features on this page.
       %h3 Comment On
       %p
-        %a.screenshot{:href => "images/AllProjects/commentOn.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/AllProjects/commentOn.jpg"}
         At the top of this section you will see a dropdown that allows you to select a Project to comment on. Select a Project and type your message, idea or attach a file. This comment will appear on this page and the homepage of the selected Project.
       %p This section also allows you to comment on all the latest activity throughout all projects. Simply respond inside the input fields displayed under each item of activity.
       %h3 Sending comments to a teammate's e-mail
       %p
-        %a.screenshot{:href => "images/AllProjects/atSymbol.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/AllProjects/atSymbol.jpg"}
         Typing the "@" symbol in any input box will reveal a dropdown menu containing a list of the project's teammates. Selecting one, several or "all" teammates from this dropdown will send this comment as an e-mail to the selected teammate(s). This feature can be used in the Tasks, Conversations, Project Overview or All Projects sections.
       %h3 My Tasks
       %p
-        %a.screenshot{:href => "images/Tasks/shortcut2.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Tasks/shortcut2.jpg"}
         In the right-hand column, you have quick access to all Tasks assigned to you. Click on any of these Tasks to post a comment, add an attachment or update project status.
       %h3 Subscribe to Feeds
       %p
-        %a.screenshot{:href => "images/AllProjects/subscribeFeed.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/AllProjects/subscribeFeed.jpg"}
         If you would like to keep up with the activity and comments on your Projects with a feed-reader (desktop or mobile), Teambox makes this easy to do.
       %ul.bullets
         %li Mac, iPhone and iPad: NetNewsWire
@@ -393,18 +413,18 @@
       %p To subscribe to a feed follow these basic steps:
       %ol.numbers
         %li
-          %a.screenshot{:href => "images/AllProjects/subscribeFeed.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/AllProjects/subscribeFeed.jpg"}
           Click the "Subscribe to feeds..." link on the All Projects page or Project homepage.
         %li
-          %a.screenshot{:href => "images/AllProjects/subscribeFeed2.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/AllProjects/subscribeFeed2.jpg"}
           Under "Your News Feeds" right-click on the gray links.
         %li
-          %a.screenshot{:href => "images/AllProjects/subscribeFeed3.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/AllProjects/subscribeFeed3.jpg"}
           Choose "Copy Link Address".
         %li Now go to your feed reader of choice.
         %li Use the feed URL you copied from Teambox to subscribe.
       %h3
-        %a.screenshot{:href => "images/AllProjects/subscribeCalendar.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/AllProjects/subscribeCalendar.jpg"}
         Subscribe to Calendar
       %p If you have assigned start and end dates for your Task Lists and Tasks, then you have the ability to add these dates to you calendar of choice (Google Calendar, iCal, Outlook, Blackberry and others). To do this, follow these steps:
       %ol.numbers
@@ -412,13 +432,13 @@
           Google Calendar
           %ol.letters.normal
             %li
-              %a.screenshot{:href => "images/AllProjects/subscribeCalendar.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/AllProjects/subscribeCalendar.jpg"}
               Click the "Subscribe to calendars..." link on the All Projects page or Project homepage.
             %li
-              %a.screenshot{:href => "images/AllProjects/subscribeCalendar2.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/AllProjects/subscribeCalendar2.jpg"}
               Under "Your Calendars" right-click on the blue link of the calendar you want to subscribe to.
             %li
-              %a.screenshot{:href => "images/AllProjects/subscribeCalendar3.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/AllProjects/subscribeCalendar3.jpg"}
               Choose "Copy Link Location."
             %li Now go to your Google Calendar.
             %li Click on Other Calendars -> Add -> Add by URL and enter the URL from the link.
@@ -426,13 +446,13 @@
           Apple iCal
           %ol.letters.normal
             %li
-              %a.screenshot{:href => "images/AllProjects/subscribeCalendar.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/AllProjects/subscribeCalendar.jpg"}
               Click the "Subscribe to calendar" link on the All Projects page or Project homepage.
             %li
-              %a.screenshot{:href => "images/AllProjects/subscribeCalendar2.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/AllProjects/subscribeCalendar2.jpg"}
               Under "Your Calendars" right-click on the blue link of the calendar you want to subscribe to.
             %li
-              %a.screenshot{:href => "images/AllProjects/subscribeCalendar3.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/AllProjects/subscribeCalendar3.jpg"}
               Choose "Copy Link Location."
             %li Now go to your iCal application.
             %li In the top menu bar click "Calendars."
@@ -445,19 +465,19 @@
     %h2#hours.borderBottom Time Tracking
     .grayBackground.indent20
       %p
-        %a.screenshot{:href => "images/TimeTracking/timeTracking.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/TimeTracking/timeTracking.jpg"}
         Time Tracking lets you indicate the time spent while working on a Task. Enable Time Tracking in the Projects Settings section. Once it is enabled, you will be able to log time spent on a Task.
       %h3 Enabling Time Tracking
       %ol.numbers
         %li Click the "Project Settings" link on far right of the blue navigation bar.
         %li
-          %a.screenshot{:href => "images/TimeTracking/enableTimeTracking.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/TimeTracking/enableTimeTracking.jpg"}
           Toward the bottom of the page, check the "Enable Time Tracking" check box.
       %h3 Entering Time
       %ol.numbers
         %li Select a Task, or create one.
         %li
-          %a.screenshot{:href => "images/Tasks/timeTrackingIcon.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Tasks/timeTrackingIcon.jpg"}
           Click the clock icon at the bottom-left of the Task.
         %li Enter the amount of hours you worked on the Task and click Save.
       %h3 Checking Time
@@ -469,31 +489,31 @@
               %dl.normal
                 %dt.bold Calendar View
                 %dd
-                  %a.screenshot{:href => "images/TimeTracking/calendarView.jpg", :rel => "facebox"}> View screenshot
+                  %img.screenshot{:src => "images/TimeTracking/calendarView.jpg"}
                   Here you can see times entered.
             %li
               %dl.normal
                 %dt.bold Time Total
                 %dd
-                  %a.screenshot{:href => "images/TimeTracking/timeTotal.jpg", :rel => "facebox"}> View screenshot
+                  %img.screenshot{:src => "images/TimeTracking/timeTotal.jpg"}
                   Beneath the Calendar View you can see a total of all hours entered.
             %li
               %dl.normal
                 %dt.bold Time Entries
                 %dd
-                  %a.screenshot{:href => "images/TimeTracking/timeEntry.jpg", :rel => "facebox"}> View screenshot
+                  %img.screenshot{:src => "images/TimeTracking/timeEntry.jpg"}
                   This section will display every teammates' working time along with their total time worked.
             %li
               %dl.normal
                 %dt.bold Report
                 %dd
-                  %a.screenshot{:href => "images/TimeTracking/timeReport.jpg", :rel => "facebox"}> View screenshot
+                  %img.screenshot{:src => "images/TimeTracking/timeReport.jpg"}
                   Click this dropdown to choose whether to indicate hours by "User, Tasks or Projects."
             %li
               %dl.normal
                 %dt.bold Filter By
                 %dd
-                  %a.screenshot{:href => "images/TimeTracking/timeFilterBy.jpg", :rel => "facebox"}> View screenshot
+                  %img.screenshot{:src => "images/TimeTracking/timeFilterBy.jpg"}
                   Click this dropdown to filter the hours by people (teammates).
 
 
@@ -507,11 +527,11 @@
         sections.
       %h3 Calendar
       %p
-        %a.screenshot{:href => "images/CalendarCharts/calendar.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/CalendarCharts/calendar.jpg"}
         The Calendar displays Task end dates only. So you must set Task end dates for them to show up in the calendar. This can be done when you first create a Task, or you can revisit your Tasks and edit them to set an end date.
       %h3 Gantt Chart
       %p
-        %a.screenshot{:href => "images/CalendarCharts/chart.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/CalendarCharts/chart.jpg"}
         A Gantt Chart is a bar chart that indicates a Task List's schedule. You must set Task List end dates for them to show up in the Gantt Chart. This can be done when you first create a Task List, or you can revisit your Task Lists and edit them to set an end date.
 
 
@@ -521,28 +541,28 @@
       %h3 Creating an Organization
       %ol.numbers
         %li
-          %a.screenshot{:href => "images/Projects/overviewForAllProjects.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Projects/overviewForAllProjects.jpg"}
           Click the "Overview for All Projects" link.
         %li Click the "Organizations" link to the far right of the blue navigation bar.
         %li
-          %a.screenshot{:href => "images/Organizations/newOrganizations.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Organizations/newOrganizations.jpg"}
           Click the "+ Create a new Organization" button.
         %li
           %dl
             %dt
-              %a.screenshot{:href => "images/Organizations/orgForm.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Organizations/orgForm.jpg"}
               Give your Organization a name
             %dd
         %li
           %dl
             %dt
-              %a.screenshot{:href => "images/Organizations/orgForm.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Organizations/orgForm.jpg"}
               Create a short Organization Code.
             %dd No spaces allowed. It will be used for the Web address.
         %li
           %dl
             %dt
-              %a.screenshot{:href => "images/Organizations/orgForm.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Organizations/orgForm.jpg"}
               Domain (Optional)
             %dd
               You can use your own domain for your Organization. If so, follow these steps:
@@ -551,21 +571,21 @@
                 %li If you want to use it from yourdomain.com, add an A record pointing to "yourgroup.teambox.com.".
                 %li Now wait some hours for the DNS to propagate and you will be able to use Teambox from your own domain name
         %li
-          %a.screenshot{:href => "images/Organizations/orgForm.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Organizations/orgForm.jpg"}
           Logo Ideally should be 134x36 pixels
         %li
-          %a.screenshot{:href => "images/Organizations/orgForm.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Organizations/orgForm.jpg"}
           HTML to be displayed on the entrance page. (Learn how to use this)
       %h3 Organization Settings
       %ol
         %li
-          %a.screenshot{:href => "images/Organizations/orgForm.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Organizations/orgForm.jpg"}
           General settings
         %li
-          %a.screenshot{:href => "images/Organizations/orgUsers.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Organizations/orgUsers.jpg"}
           Manage users - Manage user's privileges
         %li
-          %a.screenshot{:href => "images/Organizations/orgProjects.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Organizations/orgProjects.jpg"}
           Manage projects - Add a new project to your Organization
         %li Delete this organization
       %dl
@@ -576,11 +596,11 @@
     %h2#users.borderBottom Settings
     .grayBackground.indent20
       %p
-        %a.screenshot{:href => "images/Settings/settings.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Settings/settings.jpg"}
         Click the "Settings" link at the top-right, above the blue navigation bar, to make basic configurations to your Project. You then will be presented with the following five options:
       %ol.numbers
         %li.bold
-          %a.screenshot{:href => "images/Settings/settings1.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Settings/settings1.jpg"}
           Account Settings
           %ul.bullets.normal
             %li Change User Name
@@ -591,7 +611,7 @@
             %li Select timezone
             %li Enable beta features
         %li.bold
-          %a.screenshot{:href => "images/Settings/profile.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Settings/profile.jpg"}
           Profile Information
           %dl.normal
             %dt.bold First name
@@ -603,28 +623,28 @@
         %li.bold
           %dl.normal
             %dt.bold
-              %a.screenshot{:href => "images/Settings/picture.jpg", :rel => "facebox"}> View screenshot
+              %img.screenshot{:src => "images/Settings/picture.jpg"}
               Profile Picture
             %dd
               Upload a profile picture, or set up a
               = succeed "." do
                 %a{:href => "http://en.gravatar.com/"} Gravatar
         %li.bold
-          %a.screenshot{:href => "images/Settings/notifications.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Settings/notifications.jpg"}
           Notifications
           %ul.bullets.normal
             %li Notify me of updates to conversations I'm watching
             %li Notify me of updates to tasks I'm watching
             %li Send me a daily reminder of tasks assigned to me that are due soon
         %li.bold
-          %a.screenshot{:href => "images/Settings/delete.jpg", :rel => "facebox"}> View screenshot
+          %img.screenshot{:src => "images/Settings/delete.jpg"}
           Delete Account...
 
 
     %h2#search.borderBottom Search
     .grayBackground.indent20
       %p
-        %a.screenshot{:href => "images/Search/search.jpg", :rel => "facebox"}> View screenshot
+        %img.screenshot{:src => "images/Search/search.jpg"}
         Click in the search box above the blue navigation bar that says "Search All Projects." Type in your search terms and press Enter. Teambox will list all results that match your search terms.
 
 
