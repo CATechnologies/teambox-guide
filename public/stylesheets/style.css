@@ -1107,3 +1107,23 @@ p.tip {
   border: 1px solid #cc5;
   margin: 10px 0;
 }
+
+
+/* Styles for guide update */
+
+h2 {
+   border-bottom: 1px solid #DDD;
+}
+
+.guideColumn div {
+  background: #f6f6f6;
+  padding: 20px
+}
+
+ul {
+  list-style-type: disc;
+}
+
+#sideNav {
+  list-style-type: none;
+}
