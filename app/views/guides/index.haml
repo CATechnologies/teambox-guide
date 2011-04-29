@@ -7,7 +7,7 @@
 
     #splash
       %h1 Teambox Quick Guide
-      %p Welcome to the Quickstart Guide. This guide is meant to give you a way to get started with Teambox and an overview of how Teambox is structured so that you can get up and running quickly. If some thought is given at this stage to your Teambox organization structure it is helpful, though not necessary since many items can be changed later on. For this guide we will be using the basic free account which allows 3 projects.
+      %p Welcome to the Teambox Guide. This guide is meant to give you a way to get started with Teambox and an overview of how Teambox is structured so that you can get up and running quickly. If some thought is given at this stage to your Teambox organization structure it is helpful, though not necessary since many items can be changed later on. For this guide we will be using the basic free account which allows 3 projects.
 
     %h2#how-teambox-is-structured How Teambox is structured
     %div
@@ -16,7 +16,7 @@
     %h2#setting-preferences Setting your Teambox Preferences and Project Configuration
     %div
       %p Once you have signed up for Teambox, you will see the following screen inviting you to create your first project. However before clicking on Create Your First Project, let’s set your overall preferences and project configuration in Account Settings. As the initiator of your Teambox account, you are the owner. If you have been invited to join a project your participation will be governed by the role you were assigned when you were invited. Your role can be changed by the owner or an administrator. Click on "Settings" on the top right next to your user name.
-      %img{:alt => "create first project.png", :src => "/images/newguide/create-first-project.png"}/
+      = image_tag "/images/newguide/create-first-project.png"
       %p The Settings section is where you set your information for Account Settings, Profile Information, Profile Picture, Linked Accounts, Linked Apps, Notifications, Import/Export and the ability to Delete Account.
 
     %h2#account-settings Account Settings
@@ -31,7 +31,7 @@
         %li Enable Teambox beta features.
         %li Enable Badges and Achievements (checked by default.)
         %li Enable keyboard shortcuts. When checked, just press the "H" key on your keyboard for help.
-      %img{:alt => "account settings.png", :src => "/images/newguide/account-settings.png"}/
+      = image_tag "/images/newguide/account-settings.png"
       %p Click "update account" to finish.
 
     %h2#profile-settings Profile Settings
@@ -46,7 +46,7 @@
         %li Your contact address.
         %li Your Instant Messaging (IM) addresses.
         %li Your social networks.
-      %img{:alt => "profile settings.png", :src => "/images/newguide/profile-settings.png"}/
+      = image_tag "/images/newguide/profile-settings.png"
       %p Click "update account" to finish.
     %h2#profile-picture Profile Picture
     %div
@@ -56,30 +56,41 @@
       %ul
         %li Upload a picture of you, or one that you wish to use to represent you.
         %li Use the services of Gravatar (free and linked directly on this page) to create one easily. If you have ever used Gravatar to upload a picture to any online social media or forum site, it will automatically place your picture in this space.
-      %img{:alt => "profile picture.png", :src => "/images/newguide/profile-picture.png"}/
+      = image_tag "/images/newguide/profile-picture.png"
       %p Click "update account" to finish.
 
     %h2#your-notifications Your Notifications
     %div
-      %p Go to Your Notifications by clicking on the "Notifications" tab on the right-hand navigation menu.
-      %img{:alt => "your notifications.png", :src => "/images/newguide/your-notifications.png"}/
+
+      %p A notification is an email. If your email client is open you will immediately receive an email when the selected items are checked.
+      %ul
+        %li Go to Your Notifications by clicking on the "Notifications" tab on the right-hand navigation menu.
+        %li Check "Notify me of..." to receive emails of updates to watched Conversations, Tasks and Pages.
+
+      %p Under Notification options you can set your options to watch new Tasks, Conversations or Pages. The Project name will list the available projects and by Project you can:
+      %ul
+        %li Choose your email delivery mode: instant, daily digest, weekly digest or no email.
+        %li Choose at what time during the day to receive an email reminder of Tasks and a daily digest.
+
+      %p By default if you have your notifications checked you will receive email updates to elements.
+      = image_tag "/images/newguide/your-notifications.png"
       %p Click "update account" to finish.
 
     %h2#organizations Organizations
     %div
-      %p At the top level of how you can organize your Teambox, "Organizations" is the umbrella under which you can group your projects, tasks and participants. Think about the name you would like to give your organization.
+      %p At the top level of how you can organize your Teambox, "Organizations" is the umbrella under which you can group your projects, tasks and participants. Think about the name you would like to give your organization. You do not need to create an Organization at this time to create your first Project, but as you move forward, your structure may benefit from creating an Organization.
       %p You can:
       %ul
         %li Customize your organization with your own login page and logo, and link it to your domain. Your unique, branded Teambox identity is perfect for collaborating with clients.
         %li
           Go to Organizations on the right-side navigation menu. click on "Organizations". A drop-down menu will appear, click on "Manage Organizations".
-          %img{:alt => "organizations.png", :src => "/images/newguide/organizations.png"}/
+          = image_tag "/images/newguide/organizations.png"
         %li
           Now you can create your Organization, click on "Create a new Organization" and type in a name.
-          %img{:alt => "organizations/manage.png", :src => "/images/newguide/organizations-manage.png"}/
+          = image_tag "/images/newguide/organizations-manage.png"
         %li Create the short code for your organization, this will be used for the web address and your notifications. It needs to be at least 4 letters, but keep it short.
       %p Click on "Save Changes".
-      %img{:alt => "organization settings.png", :src => "/images/newguide/organization-settings.png"}/
+      = image_tag "/images/newguide/organization-settings.png"
       %p Now let’s create your first project.
     %h2#projects Projects
     %div
@@ -96,14 +107,26 @@
       %ul
         %li
           Click on "Manage Projects" on the right-side navigation menu. Create your first project by clicking on "New Project".
-          %img{:alt => "create new project.png", :src => "/images/newguide/create-new-project.png"}/
+          = image_tag "/images/newguide/create-new-project.png"
         %li Give your project a name. The Organization will be the one that you created initially.
         %li In "More options", checking "enable time tracking" allows you to establish start and end dates for your projects, track time spent on Tasks and create Gantt charts.
-        %li
-          Checking "Public project" will open the project up to everyone outside your Organization so that anybody can access and join it in the Public Projects section.
-          %img{:alt => "create a project.png", :src => "/images/newguide/create-a-project.png"}/
+        %li Checking "Public project" will open the project up to the public.
+        = image_tag "/images/newguide/create-a-project.png"
       %p Click on "Create project and invite members".
       %p To delete a project, go to the right-hand navigation menu and click on "Settings". Then click on "Project Archiving/Deletion" .
+
+      %p if you have created one or more Projects before creating an Organization and would like to fold your Projects under an Organization, you can create one anytime.
+      %ul
+        %li
+          Go to organizations on the right-side navigation menu. click on "Organizations”. A drop-down menu will appear, click on "Manage Organizations”.
+          = image_tag "/images/newguide/organizations.png"
+        %li
+          Now you can create your Organization, click on "Create a new Organization” and type in a name.
+          = image_tag "/images/newguide/organizations-manage.png"
+        %li
+          Create the short code for your organization, this will be used for the web address and your notifications. It needs to be at least 4 letters, but keep it short.
+          = image_tag "/images/newguide/organization-settings.png"
+
     %h2#people-and-permissions People and Permissions
     %div
       %p Invite your people to the project via email. They will receive an invitation to join the project.
@@ -113,43 +136,78 @@
         %li Participant—can do everything but not invite users.
         %li Commenter—can comment, but not create new elements.
         %li Observer—read-only access to project.
+      = image_tag "/images/newguide/invite-people-to-project.png"
       %p Once the Teambox invitation is accepted, the member will be listed under "People and Permissions". To change a member’s assigned role, you can do the following:
-      %img{:alt => "invite people to project.png", :src => "/images/newguide/invite-people-to-project.png"}/
+      %ul
+        %li From within the “Organizations” menu, on the right-hand navigation menu click on “Organizations”, then select your “Project”, then click on “Manage Users”. You will see your members and have the ability to assign them a different role.
+        %li From with the “Project’s” menu, on the right-hand navigation menu click on “Projects”, select your Project, then click on “People and Permissions”. You will see your members and have the ability to assign them a different role.
+
       %p On the right-hand navigation menu click on "Organizations", then select your "Project", then click on "Manage Users". You will see your members and have the ability to assign them a different role.
       %p On the right-hand navigation menu click on "Projects", select your Project, then click on "People and Permissions". You will see your members and have the ability to assign them a different role.
       %p To delete a member go to "People &amp; Permissions", click on remove next to their name.
       %p To delete a member from an Organization, go to "Manage Users", click on remove from this organization.
       %p Only Admins can delete members.
+
+    %h2#inviting-people How inviting people is handled
+    %div
+      %p When you invite someone to your Teambox, you have the option of inviting them to your Organization which by default invites them to all Projects within that Organization, or just to a unique Project.
+      %p Once you have chosen a role for the invitee, decide if you wish them to be part of the Organization. If so, select the role you wish them to have throughout the Organization under “Invite also to the Organization.”
+
     %h2#recent-activity Recent Activity
     %div
       %p Recent Activity can be considered a running stream of all events ocurring within a project. Any comments, additions to Pages, file uploads, new Conversations, etc., will all be listed for a complete overview of all activity. As you add items or make changes you will see them reflected in Recent Activity and you can navigate to them directly. Members can edit their content for up to 15 minutes. Then after that, anyone can delete something they created. ADMINS can delete anything.
+      %p Recent Activity can be considered a running stream of all events ocurring within a project. Any comments, additions to Pages, file uploads, new Conversations, etc., will all be listed for a complete overview of all activity. As you add items or make changes you will see them reflected in Recent Activity and you can navigate to them directly. Members can edit their content for up to 15 minutes. Then after that, anyone can delete something they created. ADMINS can delete anything.
+      %p Functions you can do within Recent Activity:
+      %ul
+        %li Expand and collapse threads for easy and comprehensive viewing.
+        %li Viewing entries while in collapsed view. Elements such as Tasks and Conversations may have entries contained within and these are indicated by the small grey square with a number to the left of the element. Click on the title of the element to have it drop down and reveal the entries.
+        %li View Project status. On the right-hand navigation menu click on “Recent Activity”. If your view is not collapsed, on the right-hand menu click on “View Threads Collapsed”. The status and number of entries under each Task are displayed. Clicking on a Task will let you view the entries under that Task.
+        %li Comment on any element. From either collapsed or expanded view, you can select any element and post a comment.
+        %li
+          Convert a Conversation to a Task. Click on the Conversation you wish to convert to a Task which (if in collapsed view) will open up. Under the empty comment bar you can convert to task as well as add a file or Google Doc and assign the Task to people.
+          = image_tag "/images/newguide/convert-to-task.png"
+        %li Convert status update to conversation.
+        %li Email elements to members.
+
     %h2#conversations Conversations
     %div
-      %p This is where general discussion takes place and you can update your team and everyone can keep track of reports. Threaded comments replaces emails and centralizes the discussion to the Conversation topic. Items such as announcements, information, presentation of ideas, reporting, and posting questions and receiving clarification belong here. In Conversations you can:
+      %p This is where general discussion takes place and you can update your team and everyone can keep track of reports. Threaded conversations can replace email and centralize any discussion. Entries such as announcements, reporting, posting questions and receiving clarification belong here.
+      %p In Conversations you can:
       %ul
         %li See all conversations for the project and comment on each.
         %li Attach a file, upload a Google document or notify members within each conversation.
         %li Convert a conversation to a task, assign it and create start and end dates.
       %p Let’s create your first Conversation.
-      %img{:alt => "create conversation.png", :src => "/images/newguide/create-conversation.png"}/
-      %p On the right-hand navigation menu click on "Create the first conversation in this project" and give it a title, then add your text.
+      %p On the right-hand navigation menu click on "Conversations" then click on "Create the first conversation in this project" and give it a title, then add your text.
+      = image_tag "/images/newguide/create-conversation.png"
       %p You can also:
       %ul
         %li Attach a file.
         %li Upload a Google document.
         %li Post a conversation by email.
         %li Select which members should be notified of this Conversation either individually or by "All".
-      %img{:alt => "new conversation.png", :src => "/images/newguide/new-conversation.png"}/
-      %p Before creating a Conversation you can preview it. Then click on "Create" to post the Conversation to the Project. Anyone who has been selected to receive a notification for this Conversation will receive an email. Once new Conversations are created they will appear as a list, with any attached documents and comments by members grouped under each unique one.
+      = image_tag "/images/newguide/new-conversation.png"
+      %p Before creating a Conversation you can preview it. Then click on "Create" to post the Conversation to the Project. Anyone selected to receive a notification for this Conversation will receive an email. Once new Conversations are created they will appear as a list, with any attached documents and comments by members grouped under each unique one.
       %p Additonally:
       %ul
         %li Conversations can be subscribed to by RSS. If you use Google Reader or another RSS feed-reading application, you can easily keep up with the latest responses.
         %li Comments can have attached files.
         %li You can format your responses with text styles.
         %li You can reply to a conversation from your own e-mail.
-      %img{:alt => "first conversation.png", :src => "/images/newguide/first-conversation.png"}/
+      = image_tag "/images/newguide/first-conversation.png"
     %h2#tasks Tasks
     %div
+      %p Before creating the first project task, you will need to create a Task List. This feature helps you keep your Tasks organized.
+      %ul
+        %li Click on “Tasks” on the right-hand navigation menu.
+        %li
+          Click on “Create the first task list in this project!”
+          = image_tag "/images/newguide/create-task.png"
+        %li Give your Task List a name. You can also give the Task List its own starting and end date.
+      = image_tag "/images/newguide/new-task-list.png"
+      %p Click on "Add task list", then "Create the first task".
+
+
       %p Tasks are created for work that needs to be done that are integral to a project. Each member can track what they are supposed to do, and by what date.
       %p With Tasks you can:
       %ul
@@ -165,25 +223,15 @@
             %li RESOLVED - Task has been completed. Once resolved, the Task is archived.
             %li REJECTED - Task will not be completed and is terminated. Once rejected, Task is archived.
       %p Let’s create your first Task.
+      %p Now that your Task List has been created, you can add your first Task.
+      = image_tag "/images/newguide/add-task.png"
       %ul
-        %li Click on "Tasks" on the right-hand navigation menu. Before creating the first project task, you will need to create a Task List. This feature helps you keep your Tasks organized.
-        %li
-          Click On "Create the first task list in this project!"
-          %img{:alt => "create task.png", :src => "/images/newguide/create-task.png"}/
-        %li
-          Give your Task List a name. You can also give the Task List its own starting and end date.
-          %img{:alt => "new task list.png", :src => "/images/newguide/new-task-list.png"}/
-        %li Click on Add task list, then "Create the first task" . Since a Task is a "to-do", actionable item give it an appropriate name.
-        %li Now that your Task List has been created, you can add your first Task.
-        %li
-          Under your Task List name, click on "Add Task".
-          %img{:alt => "add task.png", :src => "/images/newguide/add-task.png"}/
         %li Give your Task a name. Since a Task is a "to-do", actionable item give it an appropriate name.
       %p You can also:
       %ul
         %li Assign Task to a member and add a date by which this Task should be finished.
         %li Add specific instructions to make the task clear, and upload pertinent files.
-      %img{:alt => "new task.png", :src => "/images/newguide/new-task.png"}/
+      = image_tag "/images/newguide/new-task.png"
       %p Click on "Add Task" to finish.
       %p You can continue to add Tasks to this Task List here. In the Tasks view next to each task you see the assigned members and the total number of comments attached to that Task respresented by the yellow numbered square in front of the Task. You can also filter your view across Task Lists by member and date.
       %p Tasks can have the following status, which can be changed as the Task moves forward:
@@ -193,20 +241,29 @@
         %li HOLD - team is waiting for input before moving forward.
         %li RESOLVED - Task has been completed. Once resolved, the Task is archived.
         %li REJECTED - Task will not be completed and is terminated. Once rejected, Task is archived.
-      %img{:alt => "multiple tasks.png", :src => "/images/newguide/multiple-tasks.png"}/
+      = image_tag "/images/newguide/multiple-tasks.png"
       %p When you click on a Task, a Full View will open up to show you all comments associated with that Task, as well as the Task Status. Click on "Hide Comments" to collapse the view.
       %p You can also:
       %ul
         %li Create a "New Task List" by clicking on the grey "+ New Task List" button.
         %li Reorder your Task Lists by clicking on the blue "Reorder Task Lists".
         %li Create as many task lists as you want. Reorder them, drag and drop tasks from one list to another.
-      %img{:alt => "task status.png", :src => "/images/newguide/task-status.png"}/
+      = image_tag "/images/newguide/task-status.png"
       %p Click "Save" to add each new comment to a Task.
     %h2#time-tracking Time Tracking
     %div
       %p When you have enabled Time Tracking by setting the start and end dates for events, you will be able to see reports
       %p In the monthly view, the starting day of the week will be whatever you set in your Settings.
       %p Click on "Time Tracking" on the right-hand navigation menu. In this calendar view you can:
+      %p An example of a Users report for all members across all Projects and Organizations.
+      = image_tag "/images/newguide/timet1.png"
+      %p An example of a Task report for all members across all Projects and Organizations.
+      = image_tag "/images/newguide/timet2.png"
+      %p An example of a Projects report for all members across all Projects and Organizations.
+      = image_tag "/images/newguide/timet3.png"
+      %p An example of a Users report for a member within a specific Projects and Organization.
+      = image_tag "/images/newguide/timet4.png"
+
     %h2#pages Pages
     %div
       %p Pages are a wiki-style element that function like a library or repository of general information that members can add to once a Page is created. Each created Page serves as the top level under which titled text entries can be grouped, edited, reordered and deleted.
@@ -218,10 +275,10 @@
       %ul
         %li
           Click on "Pages" on the right-hand navigation menu. Then click on "Create the first page in this project!"
-          %img{:alt => "create first page.png", :src => "/images/newguide/create-first-page.png"}/
+          = image_tag "/images/newguide/create-first-page.png"
         %li
           Type in a name and short description for your page.
-          %img{:alt => "create new page.png", :src => "/images/newguide/create-new-page.png"}/
+          = image_tag "/images/newguide/create-new-page.png"
         %p Click "Create page" to add the new Page.
       %p Once your Page is created you can then add text and upload files and images.
       %p You can:
@@ -230,61 +287,61 @@
         %li Click on the grey "+Image or File" to upload images and files.
         %li Click on the grey "+ Divider" to create text with a dividing marker.
         %li Edit or Delete the Page by clicking on the blue "Edit" or "Delete" text to the right of the Page title.
-      %img{:alt => "first text cropped.png", :src => "/images/newguide/first-text-cropped.png"}/
+      = image_tag "/images/newguide/first-text-cropped.png"
       %p To create a text entry do the following:
       %ul
         %li
           Click on the grey "+ TEXT" icon, give your entry a title and add body copy.
-          %img{:alt => "entering body copy.png", :src => "/images/newguide/entering-body-copy.png"}/
+          = image_tag "/images/newguide/entering-body-copy.png"
       %p Click "Add Note" to post the entry, or cancel to delete.
       %p Once added, your entry will appear and be available to a member to edit. If a member has information to add to an entry within a Page they first:
       %ul
         %li Click on the Page they wish to add information to.
         %li
           Click on the entry within that Page.
-          %img{:alt => "edit page/entry cropped.png", :src => "/images/newguide/edit-page-entry-cropped.png"}/
+          = image_tag "/images/newguide/edit-page-entry-cropped.png"
         %li Click on the grey pencil icon to the right of the entry title to edit the body copy of the entry.
         %li
           Clicking the "X" to the right of the pencil icon will delete the entry.
-          %img{:alt => "making an edit cropped.png", :src => "/images/newguide/making-an-edit-cropped.png"}/
+          = image_tag "/images/newguide/making-an-edit-cropped.png"
       %p To edit the body copy text for an entry.
       %ul
         %li
           Click on the pencil to the right of the entry. The body copy section will open and you can edit the body copy title and text here.
-          %img{:alt => "make edit body copy cropped.png", :src => "/images/newguide/make-edit-body-copy-cropped.png"}/
+          = image_tag "/images/newguide/make-edit-body-copy-cropped.png"
       %p Click on "Update Note" to save the edits to the entry.
       %p To create a divider, which is text with a line before and after to create a visual separator, do the following:
       %ul
         %li
           Click on the grey "+ DIVIDER" icon, type in your text and click "Add".
-          %img{:alt => "creating a divider.png", :src => "/images/newguide/creating-a-divider.png"}/
+          = image_tag "/images/newguide/creating-a-divider.png"
       %p the divider section is then posted to the page.
-      %img{:alt => "divider added.png", :src => "/images/newguide/divider-added.png"}/
+      = image_tag "/images/newguide/divider-added.png"
       %p If you move your cursor to the left of the titled entries, a black box "Insert Here" will appear. It will move with your cursor up and down on the left. Click on that to:
       %ul
         %li
           Insert text, a divider or upload an image or file in between any of the entries. Clicking on the black "Insert Here" icon will bring up the three grey "+ TEXT, DIVIDER, IMAGE OR FILE" boxes so you can add entries at that position.
-          %img{:alt => "insert here black box.png", :src => "/images/newguide/insert-here-black-box.png"}/
+          = image_tag "/images/newguide/insert-here-black-box.png"
       %p To reorder the sequence of Page entries there is an arrow cross.
+      = image_tag "/images/newguide/arrow-cross.png"
       %ul
         %li
           Move your cursor up and down to the left of the text entires to display the arrow cross.
-          %img{:alt => "arrow cross.png", :src => "/images/newguide/arrow-cross.png"}/
         %li
           Grab the arrow cross next to the entry and drag to where you want to position the entry, then release to set the position.
-          %img{:alt => "arrow cross reorder.png", :src => "/images/newguide/arrow-cross-reorder.png"}/
+          = image_tag "/images/newguide/arrow-cross-reorder.png"
       %p To reorder the sequence of Pages themselves:
       %ul
         %li Go to the right-hand navigation pane under All Pages.
         %li
           Click on the blue "Reorder"
-          %img{:alt => "reorder pages.png", :src => "/images/newguide/reorder-pages.png"}/
+          = image_tag "/images/newguide/reorder-pages.png"
         %li
           Use the arrow cross to reorder the sequence of the Pages by grabbing it and dragging up and down to position the Page
-          %img{:alt => "reorder pages done.png", :src => "/images/newguide/reorder-pages-done.png"}/
+          = image_tag "/images/newguide/reorder-pages-done.png"
       %p Click the blue "Done" when you are finished.
     %h2#files Files
     %div
       %p The files section is a respository for all files uploaded anywhere in your Teambox. They will give you an overview and quick easy access to all files without having to search through different elements.
       %p Click on "Files" on the right-hand navigation menu to see all files.
-      %img{:alt => "files.png", :src => "/images/newguide/files.png"}/
+      = image_tag "/images/newguide/files.png"
