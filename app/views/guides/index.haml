@@ -166,9 +166,20 @@
         %li
           Convert a Conversation to a Task. Click on the Conversation you wish to convert to a Task which (if in collapsed view) will open up. Under the empty comment bar you can convert to task as well as add a file or Google Doc and assign the Task to people.
           = image_tag "/images/newguide/convert-to-task.png"
-        %li Convert status update to conversation.
-        %li Email elements to members.
-
+        %li
+          Convert a Recent Activity status update to a conversation.
+          %p On the right-hand navigation menu click on Recent Activity. At the very top is an empty comment area, similar to the screenshot above. Type in your status update entry, then click on “Save”. As the most recent entry in Recent Activity, it will be listed at the top, be called “Conversation” and have a Conversation icon next to it. However it does not have a title and will not be listed in the Conversation element as an entry.
+          %p To convert the entry to a Conversation, click on the entry title “Conversation” (not the icon).
+          = image_tag "/images/newguide/status-update-to-conversation.png"
+          %p When the entry opens up, click on the blue “Edit” on the top right.
+          = image_tag "/images/newguide/status-update-to-conversation-edit.png"
+          %p You can now give the entry a title and it will convert to a Conversation entry and be listed in the history. Click on “Update Conversation” to finish.
+          = image_tag "/images/newguide/titlling-the-entry.png"
+          %p On the right-hand navigation menu click on “Conversation”. You will now see the entry listed.
+        %li
+          Email elements to members
+          %p Use the @membername command to instantly notify a teammember.
+          %p Using the @membername command in the body copy of any element will automatically send an email to that member. For example while composing a Conversation you want to bring to the attention of teammate Sally Fisher, anywhere in the body copy type (without quotes) “@sallyfisher” and she will immediately receive an email.
     %h2#conversations Conversations
     %div
       %p This is where general discussion takes place and you can update your team and everyone can keep track of reports. Threaded conversations can replace email and centralize any discussion. Entries such as announcements, reporting, posting questions and receiving clarification belong here.
@@ -345,3 +356,46 @@
       %p The files section is a respository for all files uploaded anywhere in your Teambox. They will give you an overview and quick easy access to all files without having to search through different elements.
       %p Click on "Files" on the right-hand navigation menu to see all files.
       = image_tag "/images/newguide/files.png"
+
+    %h2#communications-between-teambox-members Communications between Teambox members.
+    %div
+      %h3
+        The @membername command
+      %p Using the @membername command in the body copy of any element will automatically send an email to that member. For example while composing a Conversation you want to bring to the attention of teammate Sally Fisher, anywhere in the body copy type (without quotes) “@sallyfisher” and she will immediately receive an email.
+
+      %h3
+        Teambox and email
+      %p You can use your email client to send emails to members, reply to and forward emails and create Conversations, Tasks and comments and have them sent directly to a Teambox element.
+      %ul
+        %li
+          To reply to an email:
+          %p Open the Teambox email you wish to reply to in your email client and select “Reply”. You will see "REPLY ABOVE THIS LINE TO POST AN ANSWER".
+          %p Compose your text above this line, eliminate unnecessary text below and send. You can also insert an @membername in the body copy to have this email sent to a member not included in the header.
+          %p To forward an email or create a Conversation, Task or comment from within your email client and have it sent to your Teambox, you will need the specific Teambox address associated with your account. When you initially created your Project a short identifier permalink was created for the Project. To locate it:
+          %p For the Project permalink: on the right-hand navigation menu click on “Projects”, select the Project, then click on “Settings” then “General Settings”.
+          %p For these examples we will use a sample project—Keiretsu which has the address: http://teambox.com/projects/keiretsu
+          %p If your project name has more than one word it will have a hyphen between the words. If your project name is a common name and therefore the same as another Teambox project name it will have a number assigned to it. i.e. keiretsu-website-project-22, because it is such a common name.
+        %li
+          To forward an email, it is handled by creating a Conversation in your Project:
+          %p Open the email you wish to forward in your email client and select “Forward”. In the “To” field put in your project permalink address. For example, keiretsu@app.teambox.com.
+          %p This will create a Conversation posted to your Project. If you want to be sure to bring this Conversation to the immediate attention of all project members you can add in the “@all” command in the body copy above the forwarded content, or the “@membername” for individual members.
+
+        %li To post a new Conversation from your email, open a new email and put the title of the Conversation as the subject line. Address it to keiretsu+conversation@app.teambox.com
+
+        %li To post a comment to a Conversation you will need the conversation ID number. In this example the ID is 5. Address it to: keiretsu+conversation+5@app.teambox.com
+
+        %li
+          To create a Task.
+          %p Open a new email and put the title of the Task as the subject line. Address it to: keiretsu+task@app.teambox.com
+
+        %li To post a comment to a Task you will need the Task ID number. In this example the ID is 12. Address it to: keiretsu+task+12@app.teambox.com
+
+        %li
+          Change the status of a Task.
+          %p When replying to a Teambox email you can use the following keywords to change the status of a Task. Add the following codes to the beginning of the email content area:
+          %ul
+            %li #username will asign the task to the member @membername.
+            %li #resolve or #resolved will mark the task as resolved.
+            %li #reject or #rejected will mark the task as rejected.
+            %li #hold will set the task on hold.
+
