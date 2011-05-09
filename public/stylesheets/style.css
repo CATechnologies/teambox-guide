@@ -1127,3 +1127,7 @@ ul {
 #sideNav {
   list-style-type: none;
 }
+
+img {
+  max-width: 920px;
+}
